@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:meditation_app/common/color_extension.dart';
 import 'package:meditation_app/common_widget/round_button.dart';
-import 'package:meditation_app/screens/login/login.dart';
 import 'package:meditation_app/screens/login/signup.dart';
+import 'package:meditation_app/screens/login/wrapper.dart';
 
 class StartUpScreen extends StatefulWidget {
   const StartUpScreen({super.key});
@@ -69,7 +69,7 @@ class _StartUpScreenState extends State<StartUpScreen> {
               ),
               TextButton(
                 onPressed: () {
-                  context.push(const LoginScreen());
+                  context.push(const Wrapper());
                 },
                 child: Text(
                   "LOG IN",

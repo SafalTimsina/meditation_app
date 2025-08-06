@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meditation_app/common/color_extension.dart';
 import 'package:meditation_app/common_widget/tab_button.dart';
 import 'package:meditation_app/meditate/meditate_screen.dart';
+import 'package:meditation_app/screens/avatar/avatar_screen.dart';
 import 'package:meditation_app/screens/home/home_screen.dart';
 import 'package:meditation_app/screens/music/music_screen.dart';
 import 'package:meditation_app/screens/sleep/sleep_screen.dart';
@@ -41,8 +42,10 @@ class _MainTabViewScreenState extends State<MainTabViewScreen> with SingleTicker
         const SleepScreen(),
         const MeditateScreen(),
         const MusicScreen(),
-        Container( color: Colors.red, )
-      ]),
+        AvatarScreen()
+        
+        ],
+      ),
       bottomNavigationBar: Container(
         padding: const EdgeInsets.only(top: 15, bottom: 8),
         decoration:  BoxDecoration(
